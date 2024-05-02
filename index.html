@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+            integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+            integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css"
+            integrity="sha512-C8Movfk6DU/H5PzarG0+Dv9MA9IZzvmQpO/3cIlGIflmtY3vIud07myMu4M/NTPJl8jmZtt/4mC9bAioMZBBdA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    </head>
+
+    <body>
+        <header>
+            <div class="header-info">
+                <div class="infomation">
+                    <p class="email">Email: info@vnexpresstour.com</p>
+                    <p>Hotline: 03 7550 7551</p>
+                </div>
+                <div class="login-singup">
+                    <ul>
+                        <li>Đăng nhập</li>
+                        <li>Đăng kí </li>
+                        <li>
+                            <img
+                                src="https://vnexpresstour.com/wp-content/plugins/gtranslate/flags/24/vi.png"
+                                alt>
+                            <p>Vietnamese</p>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-menu-list">
+                <img
+                    src="https://vnexpresstour.com/wp-content/uploads/2018/12/logo.png"
+                    alt>
+                <ul class="menu-list">
+                    <li><a href="index.html" id="active">Trang chủ</a></li>
+                    <li><a href>Giới thiệu</a></li>
+                    <li><a href="#combo">Combo du lịch</a></li>
+                    <li>
+                        <a href="#to-chuc-su-kien">Tổ chức sự kiện</a>
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <ul class="menu-con">
+                            <li id="end"><a href>Tour trọn gói</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#tour-trong-nuoc">Tour trong nước</a><i
+                            class="fa-solid fa-chevron-down"></i>
+                        <ul class="menu-con">
+                            <li><a href>Tour miền Bắc</a></li>
+                            <li><a href>Tour miền Trung</a></li>
+                            <li id="end"><a href>Tour miền Nam</a></li>
+                        </ul></li>
+                    <li><a href="#tour-nuoc-ngoai">Tour nước ngoài</a><i
+                            class="fa-solid fa-chevron-down"></i>
+                        <ul class="menu-con">
+                            <li><a href>Châu Á</a></li>
+                            <li><a href>Châu Âu</a></li>
+                            <li><a href>Châu Úc - Châu Mỹ</a></li>
+                            <li id="end"><a href>Châu Phi</a></li>
+                        </ul></li>
+                    <li><a href="#dich-vu-visa">Dịch vụ visa , hộ chiếu</a><i
+                            class="fa-solid fa-chevron-down"></i>
+                        <ul class="menu-con">
+                            <li><a href>Visa châu Á</a></li>
+                            <li><a href>Visa châu Âu</a></li>
+                            <li><a href>Visa châu Mỹ</a></li>
+                            <li><a href>Visa châu Úc</a></li>
+                            <li id="end"><a href>Visa châu Việt Nam</a></li>
+                        </ul></li>
+                    <li><a href="#dich-vu-du-lich">Dịch vụ du lịch</a><i
+                            class="fa-solid fa-chevron-down"></i>
+                        <ul class="menu-con">
+                            <li><a href>Du thuyền</a></li>
+                            <li><a href>Phòng khách sạn</a></li>
+                            <li><a href>Thuê xe du lịch</a></li>
+                            <li><a href>Vé máy bay</a></li>
+                            <li id="end"><a href>Villa</a></li>
+                        </ul></li>
+                    <li><a href="#lienhe">liên hệ</a></li>
+                    <li><a href><i
+                                class="fa-solid fa-magnifying-glass"></i></a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="banner">
+            <img
+                src="https://vnexpresstour.com/wp-content/uploads/2022/09/Cover-Web-5.png"
+                alt>
+            <div class="search-form">
+                <input type="text" placeholder="Tìm kiếm tour">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        <h1>CHƯƠNG TRÌNH KHUYẾN MÃI</h1>
+        <section id="combo" class="combo">
+            <h2 class="h2-style">COMBO DU LỊCH</h2>
+            <div class="combo-items owl-carousel owl-them">
+                <div class="item">
+                    <img
+                        src="https://vnexpresstour.com/wp-content/uploads/2022/11/Thiet-ke-chua-co-ten-88-450x300.png"
+                        alt>
+                    <div class="text">
+                        <div class="title"> <a href>HÀ NỘI – CAO HÙNG – ĐÀI
+                                TRUNG – ĐÀI BẮC
+                            </a></div>
+                        <p><span style="padding-right: 3px;"><i
+                                    class="fa-solid fa-location-dot"></i></span>Đài
+                            Loan</p>
+                        <small>Giá từ</small>
+                        <b>12.500.000đ</b>
+                        <small>5 ngày 4 đêm</small>
+                        <button>Mua tour</button>
+                    </div>
+                    <div class="noibat">
+                        <p>Nổi bật</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img
+                        src="https://vnexpresstour.com/wp-content/uploads/2023/07/359258892_1920995064940672_5537198857912863500_n-450x300.png"
+                        alt>
+                    <div class="text">
+                        <div class="title"> <a href>Mỹ - Hai bờ đông tây
+                            </a></div>
+                        <p><span style="padding-right: 3px;"><i
+                                    class="fa-solid fa-location-dot"></i></span>Mỹ</p>
+                        <small>Giá từ</small>
+                        <b>85.900.000đ</b>
+                        <small>10 ngày 9 đêm</small>
+                        <button>Mua tour</button>
+                    </div>
+                    <div class="noibat">
+                        <p>Nổi bật</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img
+                        src="https://vnexpresstour.com/wp-content/uploads/2024/01/Den-tho-Fushimi-Inari-Taisha-acc-4-450x300.webp"
+                        alt>
+                    <div class="text">
+                        <div class="title"> <a href>NARITA- TOKYO- NÚI PHÚ
+                                SĨ-NAGOYA-KYOTO-OSAKA
+                            </a></div>
+                        <p><span style="padding-right: 3px;"><i
+                                    class="fa-solid fa-location-dot"></i></span>Nhật
+                            Bản</p>
+                        <small>Giá từ</small>
+                        <b>33.490.000đ</b>
+                        <small>6 ngày 5 đêm</small>
+                        <button>Mua tour</button>
+                    </div>
+                    <div class="noibat">
+                        <p>Nổi bật</p>
+                    </div>
+                </div>
+            </div>
+            <div class="combo-items owl-carousel owl-theme">
+                <div class="item">
+                    <img
+                        src="https://vnexpresstour.com/wp-content/uploads/2022/12/014-450x300.jpg"
+                        alt>
+                    <div class="text">
+                        <div class="title"> <a href>COMBO ĐÀ LẠT WONDER
+                            </a></div>
+                        <p id="place"><span style="padding-right: 3px;"><i
+                                    class="fa-solid fa-location-dot"></i></span>Đà
+                            Lạt</p>
+                        <small>Giá từ</small>
+                        <b>12.500.000đ</b>
+                        <small>5 ngày 4 đêm</small>
+                        <button>Mua tour</button>
+                    </div>
+                    <div class="noibat">
+                        <p>Nổi bật</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img
+                        src="https://vnexpresstour.com/wp-content/uploads/2022/12/the-aston-residence-1-7474-600x399.jpg"
+                        alt>
+                    <div class="text">
+                        <div class="title"> <a href>Combo Nha Trang
+                            </a></div>
+                        <p><span style="padding-right: 3px;"><i
+                                    class="fa-solid fa-location-dot"></i></span>Nha
+                            Trang</p>
+                        <small>Giá từ</small>
+                        <b>3.878.000đ</b>
+                        <small>3 ngày 2 đêm</small>
+                        <button>Mua tour</button>
+                    </div>
+                    <div class="noibat">
+                        <p>Nổi bật</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img
+                        src="https://vnexpresstour.com/wp-content/uploads/2024/01/Den-tho-Fushimi-Inari-Taisha-acc-4-450x300.webp"
+                        alt>
+                    <div class="text">
+                        <div class="title"> <a href>Combo chạy trốn mùa hè sapa
+                                jade hill 2n1d
+                            </a></div>
+                        <p><span style="padding-right: 3px;"><i
+                                    class="fa-solid fa-location-dot"></i></span>Sapa</p>
+                        <small>Giá từ</small>
+                        <b>1.899.000đ</b>
+                        <small>2 ngày 1 đêm</small>
+                        <button>Mua tour</button>
+                    </div>
+                    <div class="noibat">
+                        <p>Nổi bật</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="tour-thiet-ke">
+            <h2 class="h2-style">TOUR THIẾT KẾ</h2>
+            <div class="combo-items owl-carousel owl-them">
+                <div class="item">
+                    <img
+                        src="https://vnexpresstour.com/wp-content/uploads/2023/07/RNA-1-450x300.png"
+                        alt>
+                    <div class="text">
+                        <div class="title"> <a href>Hà Nội - Tuy Hoà
+                            </a></div>
+                        <p><span style="padding-right: 3px;"><i
+                                    class="fa-solid fa-location-dot"></i></span>Tuy
+                            Hòa</p>
+                        <small>Giá từ</small>
+                        <b>4.200.000đ</b>
+                        <small>3 ngày 2 đêm</small>
+                        <button>Mua tour</button>
+                    </div>
+                    <div class="noibat">
+                        <p>Nổi bật</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img
+                        src="https://vnexpresstour.com/wp-content/uploads/2023/07/Thiet-ke-chua-co-ten-16-450x300.png"
+                        alt>
+                    <div class="text">
+                        <div class="title"> <a href>Hà Nội - Hạ long - Team
+                                Building
+                            </a></div>
+                        <p><span style="padding-right: 3px;"><i
+                                    class="fa-solid fa-location-dot"></i></span>Hạ
+                            Long</p>
+                        <small>Giá từ</small>
+                        <b>1.760.000đ</b>
+                        <small>2 ngày 1 đêm</small>
+                        <button>Mua tour</button>
+                    </div>
+                    <div class="noibat">
+                        <p>Nổi bật</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img
+                        src="https://vnexpresstour.com/wp-content/uploads/2023/07/Thiet-ke-chua-co-ten-23-450x300.png"
+                        alt>
+                    <div class="text">
+                        <div class="title"> <a href>Hà Nội - đà nẵng - team
+                                Building
+                            </a></div>
+                        <p><span style="padding-right: 3px;"><i
+                                    class="fa-solid fa-location-dot"></i></span>Đà
+                            Nẵng</p>
+                        <small>Giá từ</small>
+                        <b>4.490.000đ</b>
+                        <small>3 ngày 2 đêm</small>
+                        <button>Mua tour</button>
+                    </div>
+                    <div class="noibat">
+                        <p>Nổi bật</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="tour-trong-nuoc">
+            <h2 class="h2-style"> TOUR TRONG NƯỚC</h2>
+            <div class="combo-items owl-carousel owl-them">
+                <div class="item">
+                    <img
+                        src="https://vnexpresstour.com/wp-content/uploads/2023/07/tour-nha-trang-tet-2020-11103-450x300.jpg"
+                        alt>
+                    <div class="text">
+                        <div class="title"> <a href>
+                                COMBO HẢI PHÒNG – NHA TRANG 3N2D
+                            </a></div>
+                        <p><span style="padding-right: 3px;"><i
+                                    class="fa-solid fa-location-dot"></i></span>Hải
+                            Phòng - Nha
+                            Trang</p>
+                        <small>Giá từ</small>
+                        <b>3.900.000đ</b>
+                        <small>3 ngày 2 đêm</small>
+                        <button>Mua tour</button>
+                    </div>
+                    <div class="noibat">
+                        <p>Nổi bật</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img
+                        src="https://vnexpresstour.com/wp-content/uploads/2022/11/Vuong-chinh-22-450x300.png"
+                        alt>
+                    <div class="text">
+                        <div class="title"> <a href>Hà Nội - Bắc yên - săn mây
+                                tà xùa - hà Nội
+                            </a></div>
+                        <p><span style="padding-right: 3px;"><i
+                                    class="fa-solid fa-location-dot"></i></span>Bắc
+                            Yên - Tà Xùa
+                        </p>
+                        <small>Giá từ</small>
+                        <b>1.690.000đ</b>
+                        <small>2 ngày 1 đêm</small>
+                        <button>Mua tour</button>
+                    </div>
+                    <div class="noibat">
+                        <p>Nổi bật</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img
+                        src="https://vnexpresstour.com/wp-content/uploads/2022/11/Vuong-chinh-21-450x300.png"
+                        alt>
+                    <div class="text">
+                        <div class="title"> <a href>HÀ NỘI – CỐ ĐÔ HUẾ – ĐÀ NẴNG
+                                – BÀ NÀ HILL – PHỐ CỔ HỘI AN – HÀ NỘI
+                            </a></div>
+                        <p><span style="padding-right: 3px;"><i
+                                    class="fa-solid fa-location-dot"></i></span>Đà
+                            Nẵng - Hội An
+                        </p>
+                        <small>Giá từ</small>
+                        <b>5.990.000đ</b>
+                        <small>4 ngày 3 đêm</small>
+                        <button>Mua tour</button>
+                    </div>
+                    <div class="noibat">
+                        <p>Nổi bật</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="tour-nuoc-ngoai">
+            <h2 class="h2-style">TOUR NƯỚC NGOÀI</h2>
+            <div class="combo-items owl-carousel owl-them">
+                <div class="item">
+                    <img
+                        src="https://vnexpresstour.com/wp-content/uploads/2022/11/Thiet-ke-chua-co-ten-90-450x300.png"
+                        alt>
+                    <div class="text">
+                        <div class="title"> <a href>HÀ NỘI – SINGAPORE –
+                                MALAYSIA
+
+                            </a></div>
+                        <p><span style="padding-right: 3px;"><i
+                                    class="fa-solid fa-location-dot"></i></span>Singgapore
+                            -
+                            Malaysia</p>
+                        <small>Giá từ</small>
+                        <b>9.900.000đ</b>
+                        <small>5 ngày 4 đêm</small>
+                        <button>Mua tour</button>
+                    </div>
+                    <div class="noibat">
+                        <p>Nổi bật</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img
+                        src="https://vnexpresstour.com/wp-content/uploads/2024/01/thai-13-09191539-450x300.jpg"
+                        alt>
+                    <div class="text">
+                        <div class="title"> <a href>HÀ NỘI – BANGKOK – PATTAYA –
+                                HÀ NỘI
+                            </a></div>
+                        <p><span style="padding-right: 3px;"><i
+                                    class="fa-solid fa-location-dot"></i></span>Thái
+                            Lan</p>
+                        <small>Giá từ</small>
+                        <b>6.490.000đ</b>
+                        <small>5 ngày 4 đêm</small>
+                        <button>Mua tour</button>
+                    </div>
+                    <div class="noibat">
+                        <p>Nổi bật</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img
+                        src="https://vnexpresstour.com/wp-content/uploads/2024/01/seoul-450x300.webp"
+                        alt>
+                    <div class="text">
+                        <div class="title"> <a href>SEOUL – ĐẢO NAMI – CÔNG VIÊN
+                                EVERLAND – LÀNG CỔ HANOK BUKCHON- CÔNG
+                                VIÊN HOA ANH ĐÀO YEOUIDO
+
+                            </a></div>
+                        <p><span style="padding-right: 3px;"><i
+                                    class="fa-solid fa-location-dot"></i></span>hàn
+                            quốc</p>
+                        <small>Giá từ</small>
+                        <b>15.990.000đ</b>
+                        <small>5 ngày 4 đêm</small>
+                        <button>Mua tour</button>
+                    </div>
+                    <div class="noibat">
+                        <p>Nổi bật</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="to-chuc-su-kien">
+            <h2 class="h2-style">Tổ chức sự kiện</h2>
+            <div class="combo-items owl-carousel owl-them">
+                <div class="item">
+                    <img
+                        src="https://vnexpresstour.com/wp-content/uploads/2023/07/Thiet-ke-chua-co-ten-16-450x300.png"
+                        alt>
+                    <div class="text">
+                        <div class="title"> <a href>HÀ NỘI – HẠ LONG – TEAM
+                                BUILDING
+
+                            </a></div>
+                        <p><span style="padding-right: 3px;"><i
+                                    class="fa-solid fa-location-dot"></i></span>Hạ
+                            Long</p>
+                        <small>Giá từ</small>
+                        <b>12.500.000đ</b>
+                        <small>5 ngày 4 đêm</small>
+                    </div>
+                    <div class="noibat">
+                        <p>Nổi bật</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img
+                        src="https://vnexpresstour.com/wp-content/uploads/2023/07/Thiet-ke-chua-co-ten-17-450x300.png"
+                        alt>
+                    <div class="text">
+                        <div class="title"> <a href>HÀ NỘI – HẠ LONG – TEAM
+                                BUILDING
+                            </a></div>
+                        <p><span style="padding-right: 3px;"><i
+                                    class="fa-solid fa-location-dot"></i></span>Hạ
+                            Long</p>
+                        <small>Giá từ</small>
+                        <b>1.760.000đ</b>
+                        <small>2 ngày 1 đêm</small>
+                    </div>
+                    <div class="noibat">
+                        <p>Nổi bật</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img
+                        src="https://vnexpresstour.com/wp-content/uploads/2023/07/Thiet-ke-chua-co-ten-23-450x300.png"
+                        alt>
+                    <div class="text">
+                        <div class="title"> <a href>HÀ NỘI – Đà Nẵng – TEAM
+                                BUILDING
+                            </a></div>
+                        <p><span style="padding-right: 3px;"><i
+                                    class="fa-solid fa-location-dot"></i></span>Đà
+                            Nẵng</p>
+                        <small>Giá từ</small>
+                        <b>2.530.000đ</b>
+                        <small>3 ngày 2 đêm</small>
+                    </div>
+                    <div class="noibat">
+                        <p>Nổi bật</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="ki-niem">
+            <div id="ki-niem1">
+                <img
+                    src="https://vnexpresstour.com/wp-content/uploads/2022/12/new-1600x1100.png"
+                    alt>
+            </div>
+            <div id="ki-niem2">
+                <img
+                    src="https://vnexpresstour.com/wp-content/uploads/2022/12/312279517_649605506621730_193074139530967704_n-1200x800.jpg"
+                    alt>
+                <img
+                    src="https://vnexpresstour.com/wp-content/uploads/2022/12/z3861242975153_250e1045bb75ba7152d2ef027048015e-1-scaled-1200x800.jpg"
+                    alt>
+            </div>
+        </section>
+        <section id="dich-vu-du-lich">
+            <h2 class="style-h2">DỊCH VỤ DU LỊCH</h2>
+            <div class="service-items">
+                <div class="service-item ">
+                    <img
+                        src="https://vnexpresstour.com/wp-content/uploads/2022/11/Ambassador-cruise-over-view-04-400x300.jpg"
+                        alt>
+                    <div class="content">
+                        <h3>DU THUYỀN</h3>
+                        <p>17 Tháng Mười Một, 2022</p>
+                        <small>Xem chi tiết >></small>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <img
+                        src="https://vnexpresstour.com/wp-content/uploads/2022/12/Thiet-ke-chua-co-ten-69-400x300.png"
+                        alt>
+                    <div class="content">
+                        <h3>DU THUYỀN</h3>
+                        <p>17 Tháng Mười Một, 2022</p>
+                        <small>Xem chi tiết >></small>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <img
+                        src="https://vnexpresstour.com/wp-content/uploads/2022/11/Thiet-ke-chua-co-ten-66-400x300.png"
+                        alt>
+                    <div class="content">
+                        <h3>DU THUYỀN</h3>
+                        <p>17 Tháng Mười Một, 2022</p>
+                        <small>Xem chi tiết >></small>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <img
+                        src="https://vnexpresstour.com/wp-content/uploads/2022/11/Thiet-ke-chua-co-ten-67-1-400x300.png"
+                        alt>
+                    <div class="content">
+                        <h3>DU THUYỀN</h3>
+                        <p>17 Tháng Mười Một, 2022</p>
+                        <small>Xem chi tiết >></small>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="dich-vu-visa">
+            <h2 class="style-h2">DỊCH VỤ VISA</h2>
+            <div class="service-items">
+                <div class="service-item ">
+                    <img
+                        src="https://vnexpresstour.com/wp-content/uploads/2022/11/Thiet-ke-chua-co-ten-63-400x300.png"
+                        alt>
+                    <div class="content">
+                        <h3>DU THUYỀN</h3>
+                        <p>17 Tháng Mười Một, 2022</p>
+                        <small>Xem chi tiết >></small>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <img
+                        src="https://vnexpresstour.com/wp-content/uploads/2022/11/Thiet-ke-chua-co-ten-62-400x300.png"
+                        alt>
+                    <div class="content">
+                        <h3>DU THUYỀN</h3>
+                        <p>17 Tháng Mười Một, 2022</p>
+                        <small>Xem chi tiết >></small>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <img
+                        src="https://vnexpresstour.com/wp-content/uploads/2022/11/Thiet-ke-chua-co-ten-61-400x300.png"
+                        alt>
+                    <div class="content">
+                        <h3>DU THUYỀN</h3>
+                        <p>17 Tháng Mười Một, 2022</p>
+                        <small>Xem chi tiết >></small>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <img
+                        src="https://vnexpresstour.com/wp-content/uploads/2022/11/Thiet-ke-chua-co-ten-64-400x300.png"
+                        alt>
+                    <div class="content">
+                        <h3>DU THUYỀN</h3>
+                        <p>17 Tháng Mười Một, 2022</p>
+                        <small>Xem chi tiết >></small>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="tin-tuc-su-kien">
+            <h2 class="style-h2">TIN TỨC & SỰ KIỆN</h2>
+            <div class="service-items">
+                <div class="service-item ">
+                    <img
+                        src="https://vnexpresstour.com/wp-content/uploads/2023/07/dulichQuyNhon-1648878861-3106-1648880222-400x300.jpg"
+                        alt>
+                    <div class="content">
+                        <h3>TOP NHỮNG ĐIỀU CẦN LƯU Ý, KHI DU LỊCH QUY NHƠN</h3>
+                        <p>17 Tháng Mười Một, 2022</p>
+                        <small>Xem chi tiết >></small>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <img
+                        src="https://vnexpresstour.com/wp-content/uploads/2023/07/11BuoisangbinhyenDoicohonghoDa-8476-1276-1650882782-400x300.jpg"
+                        alt>
+                    <div class="content">
+                        <h3>101 MẸO BỎ TÚI GIÚP BẠN CÓ CHUYẾN ĐI ĐÀ LẠT TRỌN
+                            VẸN.</h3>
+                        <p>17 Tháng Mười Một, 2022</p>
+                        <small>Xem chi tiết >></small>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <img
+                        src="https://vnexpresstour.com/wp-content/uploads/2023/06/anh-nho-Web-2-600x450.png"
+                        alt>
+                    <div class="content">
+                        <h3>VIETNAM EXPRESS TOUR KHAI TRƯƠNG CHI NHÁNH THANH
+                            HÓA</h3>
+                        <p>17 Tháng Mười Một, 2022</p>
+                        <small>Xem chi tiết >></small>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <img
+                        src="https://vnexpresstour.com/wp-content/uploads/2023/06/anh-nho-Web-1-600x450.png"
+                        alt>
+                    <div class="content">
+                        <h3>VIETNAM EXPRESS TOUR KHAI TRƯƠNG CHI NHÁNH ĐÀ
+                            NẴNG</h3>
+                        <p>17 Tháng Mười Một, 2022</p>
+                        <small>Xem chi tiết >></small>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="lienhe">
+            <div class="lienhe-title">
+                <h2>NHẬN ƯU ĐÃI, TIN KHUYẾN MÃI</h2>
+                <p>Tặng ngay MÃ GIẢM GIÁ mua tour online</p>
+            </div>
+            <form action>
+                <div>
+                    <label for>Tên khách hàng</label>
+                    <input type="text" placeholder="Họ tên">
+                </div>
+                <div>
+                    <label for>Email khách hàng</label>
+                    <input type="email" placeholder="Email">
+                </div>
+                <div>
+                    <label for>Nội dung</label>
+                    <textarea name id cols="10" rows="7"
+                        placeholder="Nội dung"></textarea>
+                </div>
+                <button>Đăng ký ngay</button>
+            </form>
+        </section>
+        <section id="about-us">
+            <div class="items">
+                <img
+                    src="https://vnexpresstour.com/wp-content/uploads/2022/08/price-1.png"
+                    alt>
+                <div class="items-text">
+                    <b>GIÁ TỐT - NHIỀU ƯU ĐÃI</b>
+                    <small>Ưu đãi và quà tặng hấp dẫn khi mua tour
+                        online</small>
+                </div>
+            </div>
+            <div class="items">
+                <img
+                    src="https://vnexpresstour.com/wp-content/uploads/2022/08/pay-1.png"
+                    alt>
+                <div class="items-text">
+                    <b>GIÁ TỐT - NHIỀU ƯU ĐÃI</b>
+                    <small>Ưu đãi và quà tặng hấp dẫn khi mua tour
+                        online</small>
+                </div>
+            </div>
+            <div class="items">
+                <img
+                    src="https://vnexpresstour.com/wp-content/uploads/2022/08/promotion.png"
+                    alt>
+                <div class="items-text">
+                    <b>GIÁ TỐT - NHIỀU ƯU ĐÃI</b>
+                    <small>Ưu đãi và quà tặng hấp dẫn khi mua tour
+                        online</small>
+                </div>
+            </div>
+            <div class="items">
+                <img
+                    src="https://vnexpresstour.com/wp-content/uploads/2022/08/star.png"
+                    alt>
+                <div class="items-text">
+                    <b>GIÁ TỐT - NHIỀU ƯU ĐÃI</b>
+                    <small>Ưu đãi và quà tặng hấp dẫn khi mua tour
+                        online</small>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-info">
+                <img
+                    src="https://vnexpresstour.com/wp-content/uploads/2018/12/logo-768x423.png"
+                    alt>
+                <p>Công ty TNHH Dịch Vụ Lữ Hành Chuyến Đi Việt Nam</p>
+                <p>VNE Hà Nội: Toà Hud3, Tô Hiệu, Hà Đông, Hà Nội</p>
+                <p>VNE Hải Phòng: SH1.15A Vinhomes Marina, Hải Phòng</p>
+                <p>VNE Đà Nẵng: 172 Xô Viết Nghệ Tĩnh, Hải Châu, Đà Nẵng</p>
+                <p>VNE Quảng Ninh: Số 52 Đại Lộ Hoà Bình, Móng Cái, Quảng
+                    Ninh</p>
+                <p>VNE Thanh Hóa: HH22-09 Vinhomes Star City, Thanh Hoá</p>
+                <p>Hotline: 03 7550 7551</p>
+                <p>Email: info@vnexpresstour.com</p>
+                <div class="social">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-solid fa-envelope"></i>
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+            </div>
+            <div class="footer-service">
+                <h3>DỊCH VỤ</h3>
+                <div>
+                    <ul>
+                        <li>Combo du lịch</li>
+                        <li>Tour trong nước</li>
+                        <li>Tour nước ngoài</li>
+                        <li>Dịch vụ du lịch</li>
+                    </ul>
+                    <ul>
+                        <li>Thông tin</li>
+                        <li>Chính sách</li>
+                        <li>Chăm sóc khách hàng</li>
+                        <li>Liên hệ</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <img src="/img/Screenshot 2024-04-09 230234.png" alt>
+            </div>
+        </footer>
+        <div class="dieuhuong">
+            <a href="index.html"> <i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+    </body>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        navigator: true,
+        autoplay: true,
+        margin: 50,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 1,
+                nav: true
+            },
+            600: {
+                items: 2,
+                nav: false
+            },
+            1000: {
+                items: 3,
+                nav: true,
+            }
+        }
+    })
+
+</script>
+
+</html>
